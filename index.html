@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/css.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>LOGO</h1>
+    <nav>
+      <li><a href="#">about</a></li>
+      <li><a href="#">countact</a></li>
+      <li><a href="#">log out</a></li>
+    </nav>
+  </header>
+  <div class="info">
+  <!-- Grid -->
+  <form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Personal Details</li>
+      <li>Study Grade</li>
+      <li>Finish</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+
+      <h2 class="fs-title">Account Setup</h2>
+      <div>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="name" placeholder="The name is quadruple" autofocus required />
+      </div>
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" placeholder="ex@example.com" required />
+      </div>
+      <div>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password" minlength="7" maxlength="10" required />
+      </div>
+      <div>
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" name="phone" minlength="11" maxlength="11" required />
+      </div>
+      <div>
+        <label for="nation">Nationalty</label>
+        <select name="nationality" id="nation">
+          <option value="eg" selected>Egypt</option>
+          <option value="ot">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" name="birth" required />
+      </div>
+      <div id="gen">
+        <label>Gender</label>
+        <input type="radio" name="gender" id="male" value="1" checked />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="0" />
+        <label for="female">Female</label>
+      </div>
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Personal Information</h2>
+      <div>
+        <label>National Id</label>
+        <div class="nattionalid">
+          <input type="text" name="nationalId" minlength="14" maxlength="14" autofocus required />
+          <input type="radio" name="natId" id="per" value="p"><label for="per">Personal</label>
+          <input type="radio" name="natId" id="fam" value="f"><label for="fam">Family</label>
+        </div>
+        <div class="nattionalid">
+          <div class="nattionalid">
+            <label>Date of publish</label>
+            <input type="date" name="idDateOfpublish">
+          </div>
+          <div class="nattionalid">
+            <label>Issuer</label>
+            <input type="text" name="cityOfNationalId">
+          </div>
+        </div>
+      </div>
+      <div>
+        <label>Religion</label>
+        <select name="religion">
+          <option value="muslim" selected>Muslim</option>
+          <option value="christian">Christian</option>
+          <option value="jewish">Jewish</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label>Your Job</label>
+        <input type="text" name="job" maxlength="30">
+      </div>
+      <div>
+        <label>Current Address</label>
+        <input type="text" name="currentAddress">
+      </div>
+      <div>
+        <label>Born Address</label>
+        <div class="born">
+          <input type="text" name="bornvillage" placeholder="village">
+          <input type="text" name="bornCity" placeholder="City">
+          <input type="text" name="bornGovernorate" placeholder="Governorate">
+        </div>
+      </div>
+      <div>
+        <label>Military state</label>
+        <select name="military">
+          <option value="" disabled selected hidden>Female select non</option>
+          <option value="1">Finish</option>
+          <option value="2">Delayed</option>
+          <option value="3">Exempt </option>
+          <option value="0">NON</option>
+        </select>
+      </div>
+
+
+      <input type="button" name="next" class="next action-button" value="Next" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">University Grade</h2>
+
+      <div class="grade">
+        <select name="gradeType">
+          <option value="1">Bachelor</option>
+          <option value="2">BA</option>
+        </select>
+        <input type="text" name="grade" placeholder="grade in what?">
+        <select name="Round">
+          <option value="" disabled selected hidden>Round</option>
+          <option value="1">First</option>
+          <option value="2">Second</option>
+        </select>
+        <select name="generalAppreciation">
+          <option value="" disabled selected hidden>General appreciation</option>
+          <option value="4">Excellence</option>
+          <option value="3">very Good</option>
+          <option value="2">Good</option>
+          <option value="1">Acceptable</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Department</label>
+        <div class="dep">
+          <input type="text" name="department" placeholder="Computer Science">
+          <select name="departmentAppreciation">
+            <option value="" disabled selected hidden>Appreciation</option>
+            <option value="4">Excellence</option>
+            <option value="3">very Good</option>
+            <option value="2">Good</option>
+            <option value="1">Acceptable</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>University</label>
+        <div class="dep">
+          <label>College</label>
+          <input type="text" name="department" placeholder="Computer Science">
+          <select name="university">
+            <option value="" disabled selected hidden>University</option>
+            <option value="menofia">Menofia</option>
+            <option value="tanta">Tanta</option>
+            <option value="zag">Zagazig</option>
+            <option value="aswan">Aswan</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <h2 class="fs-title">Postgraduate diploma</h2>
+
+      <label>Diploma</label>
+      <div class="grade">
+        <input type="text" name="diploma" placeholder="diploma in what?">
+        <select name="Round">
+          <option value="" disabled selected hidden>Round</option>
+          <option value="1">First</option>
+          <option value="2">Second</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Department</label>
+        <div class="dep">
+          <input type="text" name="diplomaDepartment" placeholder="Computer Science">
+          <select name="diplomaAppreciation">
+            <option value="" disabled selected hidden>Appreciation</option>
+            <option value="4">Excellence</option>
+            <option value="3">very Good</option>
+            <option value="2">Good</option>
+            <option value="1">Acceptable</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>University</label>
+        <div class="dep">
+          <label>College</label>
+          <input type="text" name="diplomacollage" placeholder="Computer Science">
+          <select name="diplomauniversity">
+            <option value="" disabled selected hidden>University</option>
+            <option value="menofia">Menofia</option>
+            <option value="tanta">Tanta</option>
+            <option value="zag">Zagazig</option>
+            <option value="aswan">Aswan</option>
+          </select>
+        </div>
+      </div>
+
+      <input type="button" name="next" class="next action-button" value="Next" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Verification</h2>
+      <div>
+        <label>Put your full name here as Signature</label>
+        <input type="text" name="fname" placeholder="Full Name" />
+      </div>
+
+
+      <input type="submit" name="submit" class="submit action-button" value="Submit" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+    </fieldset>
+  </form>
+  </div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
